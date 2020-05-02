@@ -185,3 +185,5 @@ const universe = {
     tras: 35,
   },
 };
+
+module.exports = universe;
