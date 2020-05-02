@@ -1,5 +1,7 @@
 const officerTypes = require('../../data/officer/officerTypes');
 
+const startGame = require('../functions/startGame');
+
 const getPatent = (conv, params) => {
   const { patent } = params;
 
@@ -13,7 +15,7 @@ const getPatent = (conv, params) => {
       [_, officer] = officerTypes;
       break;
     case 'Security':
-      [_, officer] = officerTypes;
+      [_, _, officer] = officerTypes;
       break;
     default:
       [_, officer] = officerTypes;
@@ -23,6 +25,8 @@ const getPatent = (conv, params) => {
   conv.data.officer = officer;
 
   conv.ask(officer.description);
+
+  startGame(conv);
 };
 
 module.exports = getPatent;
