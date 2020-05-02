@@ -30,8 +30,6 @@ const startGame = (conv) => {
 
   conv.data.enemies = enemies;
   conv.data.officer.location = Math.round(Math.random() * 40) + 1;
-
-  console.log(conv.data.officer);
 };
 
 module.exports = startGame;
