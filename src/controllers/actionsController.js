@@ -1,5 +1,5 @@
-class ActionController {
-  actions() {}
-}
+const { dialogflow } = require('actions-on-google');
 
-module.exports = new ActionController();
+const app = dialogflow({ debug: true });
+
+module.exports = app;

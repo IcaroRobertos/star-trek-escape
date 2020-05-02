@@ -13,7 +13,7 @@ class App {
   }
 
   routes() {
-    this.express.use('/', ActionController.actions);
+    this.express.use('/', ActionController);
   }
 }
 
