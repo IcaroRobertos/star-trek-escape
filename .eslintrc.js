@@ -16,5 +16,7 @@ module.exports = {
   },
   rules: {
     'class-methods-use-this': 'off',
+    'no-param-reassign': 'off',
+    'no-undef': 'off',
   },
 };
