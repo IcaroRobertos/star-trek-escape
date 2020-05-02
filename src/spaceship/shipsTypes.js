@@ -1,4 +1,4 @@
-const spaceTypes = [
+const shipsTypes = [
   {
     name: 'Science Vessel - USS Reliant - NCC-1864',
     description:
@@ -16,4 +16,4 @@ const spaceTypes = [
   },
 ];
 
-module.exports = spaceTypes;
+module.exports = shipsTypes;
