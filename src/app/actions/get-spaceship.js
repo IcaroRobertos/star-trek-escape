@@ -23,6 +23,8 @@ const getSpaceship = (conv, { spaceship }) => {
       [_, shipData] = shipsTypes;
   }
 
+  conv.data.spaceship = shipData;
+
   conv.ask(
     `Ótimo, ${userName}. Você será tripulante na ${shipData.name}. ${shipData.description}`,
   );

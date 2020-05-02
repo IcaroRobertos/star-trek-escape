@@ -20,8 +20,9 @@ const getPatent = (conv, params) => {
       break;
   }
 
+  conv.data.officer = officer;
+
   conv.ask(officer.description);
-  
 };
 
 module.exports = getPatent;
