@@ -1,4 +1,4 @@
-const universe = {
+const spaceship = {
   1: {
     frente: 6,
     direita: 2,
@@ -186,4 +186,4 @@ const universe = {
   },
 };
 
-module.exports = universe;
+module.exports = spaceship;
